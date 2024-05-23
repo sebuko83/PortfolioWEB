@@ -3,9 +3,9 @@
         <img src="https://picsum.photos/400/600" alt="My Image">
     </div>
     <div class="hero-text">
-        <h2>Bla Ich bin</h2>
+        <h2 class="color-accent">Bla Ich bin</h2>
         <h1>bla Name</h1>
-        <h3>beschreibung mit lorem 32</h3>
+        <h3 class="color-primary">beschreibung mit lorem 32</h3>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, rem. Dolore fugit, nemo ipsum tempora laborum ab voluptatem architecto corporis iure. Adipisci accusantium vitae error, laborum iste dolorem? Excepturi voluptatibus debitis ullam?
         </p>
@@ -38,20 +38,32 @@
     }
     .hero .hero-text {
         width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .hero-text p {
         margin-top: 1rem;
-        border: 1px solid rgb(62, 62, 62);
-        background-color: blueviolet;
+        border: 1px solid rgb(191, 46, 162);
+        background-color: rgb(56, 51, 54);
         border-radius: 15px;
         padding: 1rem;
+        max-width: 40ch;
     }
     .hero-text p::before {
-        color: fuchsia;
-        content: '"';
+        color: fuchsia; 
+        content: '“';
+        <!-- var auch möglich -->
     }
     .hero-text p::after {
         color: fuchsia;
-        content: '"';
-    }    
+        content: '”';
+    }
+    .color-accent {
+        color: var(--color-accent);
+    }
+    .color-primary {
+        color: var(--color-primary);
+    }
 </style>
