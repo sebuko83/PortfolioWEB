@@ -13,9 +13,24 @@ import Progress from '../components/Progress.astro';
         <Hero />
     </section>
     <section id="skills"></section>
-        <Progress />
-    <section id="timeline"></section>
-    <section id="projects"></section>
+            <div class="skills-list">   
+                <Progress title="HTML" progress="20" color='pink'/>
+                <Progress title="CSS" progress="4" color='blue'/>
+                <Progress title="Java" progress="25" color='gray'/>
+                <Progress title="Administration" progress="65" color='red'/>  
+            </div>        
+        <section id="timeline"></section>
+        <section id="projects"></section>
     <!-- strg+. Hotkey Refactoring
     strg+<space> Hotkey Autocorrect-->
 </Layout>
+
+<style>
+    .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+</style>
