@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Hero from '../components/Hero.astro';
 import Progress from '../components/Progress.astro';
+import Timeline from '../components/Timeline.astro';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -19,7 +20,9 @@ import Progress from '../components/Progress.astro';
                 <Progress title="Java" progress="25" color='gray'/>
                 <Progress title="Administration" progress="65" color='red'/>  
             </div>        
-        <section id="timeline"></section>
+        <section id="timeline">
+            <Timeline />
+        </section>
         <section id="projects"></section>
     <!-- strg+. Hotkey Refactoring
     strg+<space> Hotkey Autocorrect-->
